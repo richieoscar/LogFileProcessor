@@ -53,7 +53,7 @@ func Worker(keywords []string, lineChan <-chan []string, countChan chan<- map[st
 		counts := make(map[string]int)
 		for _, line := range lines {
 			for _, keyword := range keywords {
-				if strings.Contains(line, keyword) {
+				if strings.Contains(line, keyword) || strings.Contains(line, strings.ToLower(keyword)) {
 					counts[keyword]++
 				}
 			}
