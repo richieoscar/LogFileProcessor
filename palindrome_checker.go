@@ -61,7 +61,7 @@ func generator(ctx context.Context, jobs chan<- int) {
 	}
 }
 
-func run() {
+func palindromeChecker() {
 	var N int
 	fmt.Print("Enter N: ")
 	_, err := fmt.Scanln(&N)

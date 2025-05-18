@@ -84,7 +84,7 @@ func SortCounts(counts map[string]int) []KeywordCount {
 	return result
 }
 
-func process_log(filePath string) {
+func processLog(filePath string) {
 	keywords := []string{"ERROR", "WARN", "INFO"} // Define your keywords here
 	batchSize := 100                              // Lines per batch
 
